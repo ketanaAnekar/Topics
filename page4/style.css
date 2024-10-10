@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensures content starts from the top */
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: rgb(255, 230, 0); /* Sidebar background color */
+    padding: 20px;
+    transition: right 0.4s ease; /* Smooth transition */
+    z-index: 1000;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: rgb(0, 0, 0); /* Text color for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Dazzle Unicase', sans-serif;
+}
+
+/* Toggle button styling */
+#menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0); /* Button text color */
+    cursor: pointer;
+    z-index: 1001;
+    font-family: 'Dazzle Unicase', sans-serif;
+    transition: transform 0.3s ease; /* Transition effect for changing text */
+}
+.game-header {
+    font-family: 'Impact', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 20px 0; /* Space between the header and the top */
+    width: 100%;
+    color: #000000;
+    position: relative;
+    top: 0;
+}
+.game-container {
+    position: relative;
+    top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15vh;
+}
+
+.image-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+#background1 {
+    width: 100%;
+    height: 130%;
+}
+
+#background2{
+    width: 100%;
+    height: 130%;
+}
+#background3{
+    width: 100%;
+    height: 130%;
+}
+.sticker-cover {
+    position: absolute;
+    top: -8vh;
+    left: -7vh;
+    width: 25vh;
+    height: 43vh;
+    background-color: black;
+    z-index: 10;
+    transform: translate(100px, 100px);
+}
+#cover2{
+    position: absolute;
+    top: -3vh;
+    left: -12vh;
+    width: 37vh;
+    height: 30vh;
+    background-color: black;
+    z-index: 10;
+    transform: translate(100px, 100px);
+}
+#cover3{
+    position: absolute;
+    top: -1vh;
+    left: -2vh;
+    width: 20vh;
+    height: 20vh;
+    background-color: black;
+    z-index: 10;
+    transform: translate(100px, 100px);
+}
+.options-container {
+    display: flex;
+    position: relative;
+    top: 3vh;
+    flex-direction: row;
+    justify-content: space-around;  
+    width: 100%;
+}
+
+.sticker-option {
+    width: 100px;
+    height: 100%;
+    cursor: grab;
+}
+
+#message1 {
+    position: relative;
+    top: -10vh;
+    font-size: 24px;
+    font-weight: bold;
+}
+#message2 {
+    position: relative;
+    top: -10vh;
+    font-size: 24px;
+    font-weight: bold;
+}
+#message3 {
+    position: relative;
+    top: -10vh;
+    font-size: 24px;
+    font-weight: bold;
+}
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}

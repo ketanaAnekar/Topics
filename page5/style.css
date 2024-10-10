@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+}
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: rgb(0, 255, 140); /* Sidebar background color */
+    padding: 20px;
+    transition: right 0.4s ease; /* Smooth transition */
+    z-index: 1000;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: rgb(255, 255, 255); /* Text color for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Dazzle Unicase', sans-serif;
+}
+
+/* Toggle button styling */
+#menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: rgb(255, 255, 255); /* Button text color */
+    cursor: pointer;
+    z-index: 1001;
+    font-family: 'Dazzle Unicase', sans-serif;
+    transition: transform 0.3s ease; /* Transition effect for changing text */
+}
+
+header {
+    padding: 50px 20px;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+h1 {
+    margin-top: 2vh;
+    font-size: 12rem;
+    line-height: 170px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Collage Section */
+.collage {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-grid {
+    display: flexbox;
+}
+
+.stick1{
+    position: absolute;
+    top: 55vh;
+    left:2vh;
+    width: 30%;
+    transform: rotate(15deg);
+}
+.stick2{
+    position: absolute;
+    top: 55vh;
+    left: 50vh;
+    width: 30%;
+    transform: rotate(-10deg);
+}
+.stick3{
+    position: absolute;
+    top: 55vh;
+    left: 90vh;
+    width: 30%;
+    transform: rotate(10deg);
+}
+.stick4{
+    position: absolute;
+    top: 55vh;
+    left: 140vh;
+    width: 30%;
+    transform: rotate(15deg);
+}
+
+.article {
+    max-width: 800px;
+    margin: 140px auto;
+    padding: 20px;
+}
+
+.article p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+.article-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article {
+        padding: 15px;
+    }
+
+    .article-image {
+        width: 100%;
+    }
+}
+

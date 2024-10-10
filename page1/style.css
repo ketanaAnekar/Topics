@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style for the floating images */
+  .floating-image {
+    position: absolute;
+    width: 80vh;
+    transition: transform 0.1s linear;
+  }
+  
+  /* Center the camera view */
+  #video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Sidebar styling */
+  #sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially hidden off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: rgb(72, 54, 163); /* Sidebar background color */
+    padding: 20px;
+    transition: right 0.4s ease; /* Smooth transition */
+    z-index: 1000;
+  }
+  
+  #sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #sidebar ul li {
+    margin: 20px 0;
+  }
+  
+  #sidebar ul li a {
+    color: rgb(0, 0, 0); /* Text color for links */
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Dazzle Unicase', sans-serif;
+  }
+  
+  /* Toggle button styling */
+  #menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: rgb(0, 0, 0); /* Button text color */
+    cursor: pointer;
+    z-index: 1001;
+    font-family: 'Dazzle Unicase', sans-serif;
+    transition: transform 0.3s ease; /* Transition effect for changing text */
+  }
+  
+  .head {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    font-family: 'Dazzle Unicase', sans-serif;
+    position: absolute;
+    top: 80vh;
+    left: 75vh;
+    
+  }

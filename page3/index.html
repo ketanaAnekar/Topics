@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>STICKER MAKER</title>
+</head>
+<body>
+    <div id="menu-btn">EXPLORE?</div>
+    <div id="sidebar">
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/page4/index.html">MATCH THE STICKER</a></li>
+            <li><a href="/page1/index.html">HAND ME THE STICKER</a></li>
+            <li><a href="/page5/index.html">MASS PRODUCED</a></li>
+            <li><a href="/page2/index.html">FOUND!</a></li>
+        </ul>
+    </div>
+    <h1 class="title">STICKER MAKER</h1>
+    <div class="container">
+        <div class="panel">
+            <label for="shapeSelect">CHOOSE SHAPE:</label>
+            <select id="shapeSelect">
+                <option value="circle">Circle</option>
+                <option value="square">Square</option>
+                <option value="triangle">Triangle</option>
+            </select>
+
+            <label for="shapeSizeSlider">SHAPE SIZE:</label>
+            <input type="range" id="shapeSizeSlider" min="50" max="300" value="150">
+
+            <label for="borderThicknessSlider">BORDER THICKNESS:</label>
+            <input type="range" id="borderThicknessSlider" min="1" max="20" value="5">
+
+            <label for="fillColorPicker">FILL COLOR:</label>
+            <input type="color" id="fillColorPicker" value="#ff0000">
+
+            <label for="borderColorPicker">BORDER COLOR:</label>
+            <input type="color" id="borderColorPicker" value="#000000">
+
+            <label for="patternSelect">PATTERN:</label>
+            <select id="patternSelect">
+                <option value="none">None</option>
+                <option value="stripes">Stripes</option>
+                <option value="dots">Dots</option>
+                <option value="grid">Grid</option>
+            </select>
+
+            <label for="patternColorPicker">PATTERN COLOR:</label>
+            <input type="color" id="patternColorPicker" value="#ffffff">
+
+            <label for="textInput">CUSTOM TEXT:</label>
+            <input type="text" id="textInput" placeholder="Enter text">
+
+            <label for="textSizeSlider">TEXT SIZE:</label>
+            <input type="range" id="textSizeSlider" min="10" max="100" value="30">
+
+            <label for="fontSelect">FONT:</label>
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+            </select>
+
+            <label for="textColorPicker">TEXT COLOR:</label>
+            <input type="color" id="textColorPicker" value="#000000">
+
+            <label for="glowSlider">GLOW EFFECT:</label>
+            <input type="range" id="glowSlider" min="0" max="50" value="0">
+
+            <label for="glitchSlider">GLITCH EFFECT:</label>
+            <input type="range" id="glitchSlider" min="0" max="20" value="0">
+
+            <label for="backgroundColorPicker">BACKGROUND COLOR:</label>
+            <input type="color" id="backgroundColorPicker" value="#ffffff">
+
+            <button id="saveButton">SAVE STICKER</button>
+        </div>
+
+        <canvas id="stickerCanvas" width="500" height="500"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
